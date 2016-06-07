@@ -5,6 +5,8 @@
  */
 package formularios;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author David Sarmiento
@@ -44,12 +46,20 @@ public class Producto extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jButton1.setForeground(new java.awt.Color(204, 0, 204));
         jButton1.setText("Aceptar");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jLabel1.setFont(new java.awt.Font("Andalus", 0, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(204, 0, 204));
         jLabel1.setText("Nombre");
 
         jTextField1.setFont(new java.awt.Font("Andalus", 0, 14)); // NOI18N
+        jTextField1.setForeground(new java.awt.Color(204, 0, 204));
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
@@ -57,6 +67,7 @@ public class Producto extends javax.swing.JFrame {
         });
 
         jTextField2.setFont(new java.awt.Font("Andalus", 0, 14)); // NOI18N
+        jTextField2.setForeground(new java.awt.Color(204, 0, 204));
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField2ActionPerformed(evt);
@@ -64,12 +75,15 @@ public class Producto extends javax.swing.JFrame {
         });
 
         jLabel2.setFont(new java.awt.Font("Andalus", 0, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(204, 0, 204));
         jLabel2.setText("Precio");
 
         jLabel3.setFont(new java.awt.Font("Andalus", 0, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(204, 0, 204));
         jLabel3.setText("Fecha Publicacion");
 
         jTextField3.setFont(new java.awt.Font("Andalus", 0, 14)); // NOI18N
+        jTextField3.setForeground(new java.awt.Color(204, 0, 204));
         jTextField3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField3ActionPerformed(evt);
@@ -77,17 +91,21 @@ public class Producto extends javax.swing.JFrame {
         });
 
         jLabel4.setFont(new java.awt.Font("Andalus", 0, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(204, 0, 204));
         jLabel4.setText("Descripcion");
 
         jTextField4.setFont(new java.awt.Font("Andalus", 0, 14)); // NOI18N
+        jTextField4.setForeground(new java.awt.Color(204, 0, 204));
         jTextField4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField4ActionPerformed(evt);
             }
         });
 
+        jMenu1.setForeground(new java.awt.Color(204, 0, 204));
         jMenu1.setText("File");
 
+        jMenuItem1.setForeground(new java.awt.Color(204, 0, 204));
         jMenuItem1.setText("Usuario");
         jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -96,11 +114,13 @@ public class Producto extends javax.swing.JFrame {
         });
         jMenu1.add(jMenuItem1);
 
+        jMenuItem2.setForeground(new java.awt.Color(204, 0, 204));
         jMenuItem2.setText("Salir");
         jMenu1.add(jMenuItem2);
 
         jMenuBar1.add(jMenu1);
 
+        jMenu2.setForeground(new java.awt.Color(204, 0, 204));
         jMenu2.setText("Edit");
         jMenuBar1.add(jMenu2);
 
@@ -179,6 +199,10 @@ Usuario frmUsuario = new Usuario();
 frmUsuario.setVisible(true);
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    JOptionPane.showMessageDialog(null, "Producto Ingresado Correctamente");        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments

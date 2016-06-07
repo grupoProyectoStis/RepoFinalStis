@@ -5,6 +5,8 @@
  */
 package formularios;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author David Sarmiento
@@ -49,6 +51,7 @@ public class Usuario extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jTextField1.setFont(new java.awt.Font("Andalus", 0, 14)); // NOI18N
+        jTextField1.setForeground(new java.awt.Color(255, 0, 102));
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
@@ -56,27 +59,36 @@ public class Usuario extends javax.swing.JFrame {
         });
 
         jLabel1.setFont(new java.awt.Font("Andalus", 0, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 0, 102));
         jLabel1.setText("Nombre");
 
         jLabel2.setFont(new java.awt.Font("Andalus", 0, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 0, 102));
         jLabel2.setText("Edad");
 
         jLabel3.setFont(new java.awt.Font("Andalus", 0, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 0, 102));
         jLabel3.setText("Direccion");
 
         jLabel4.setFont(new java.awt.Font("Andalus", 0, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 0, 102));
         jLabel4.setText("Correo");
 
         jTextField2.setFont(new java.awt.Font("Andalus", 0, 14)); // NOI18N
+        jTextField2.setForeground(new java.awt.Color(255, 0, 102));
 
         jTextField3.setFont(new java.awt.Font("Andalus", 0, 14)); // NOI18N
+        jTextField3.setForeground(new java.awt.Color(255, 0, 102));
 
         jTextField4.setFont(new java.awt.Font("Andalus", 0, 14)); // NOI18N
+        jTextField4.setForeground(new java.awt.Color(255, 0, 102));
 
         jLabel5.setFont(new java.awt.Font("Andalus", 0, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 0, 102));
         jLabel5.setText("Tipo Usuario");
 
         jComboBox1.setFont(new java.awt.Font("Andalus", 0, 14)); // NOI18N
+        jComboBox1.setForeground(new java.awt.Color(255, 0, 102));
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Administrador", "Supervisor", "Publicista", "Normal" }));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -85,15 +97,28 @@ public class Usuario extends javax.swing.JFrame {
         });
 
         jLabel6.setFont(new java.awt.Font("Andalus", 0, 14)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 0, 102));
         jLabel6.setText("Departamento");
 
         jComboBox2.setFont(new java.awt.Font("Andalus", 0, 14)); // NOI18N
+        jComboBox2.setForeground(new java.awt.Color(255, 0, 102));
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "La Libertad", "Chalatenango", "Sonsonate", "Santa Ana", "Aguachapan", "San Salvador", "San Miguel", "La Union", "La Paz", "Otro" }));
 
+        jButton1.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(153, 0, 153));
         jButton1.setText("Enviar");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
+        jMenuBar1.setForeground(new java.awt.Color(255, 102, 102));
+
+        jMenu1.setForeground(new java.awt.Color(255, 51, 153));
         jMenu1.setText("File");
 
+        jMenuItem1.setForeground(new java.awt.Color(255, 51, 153));
         jMenuItem1.setText("Producto");
         jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -102,11 +127,13 @@ public class Usuario extends javax.swing.JFrame {
         });
         jMenu1.add(jMenuItem1);
 
+        jMenuItem2.setForeground(new java.awt.Color(255, 51, 153));
         jMenuItem2.setText("Salir");
         jMenu1.add(jMenuItem2);
 
         jMenuBar1.add(jMenu1);
 
+        jMenu2.setForeground(new java.awt.Color(255, 51, 153));
         jMenu2.setText("Edit");
         jMenuBar1.add(jMenu2);
 
@@ -168,7 +195,7 @@ public class Usuario extends javax.swing.JFrame {
                     .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jButton1)
-                .addContainerGap(23, Short.MAX_VALUE))
+                .addContainerGap(15, Short.MAX_VALUE))
         );
 
         pack();
@@ -187,6 +214,10 @@ Producto frmProducto = new Producto();
 frmProducto.setVisible(true);
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+JOptionPane.showMessageDialog(null, "Usuario Ingresado Correctamente");        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
